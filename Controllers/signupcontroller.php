@@ -1,9 +1,7 @@
 <?php
     
    include 'c:/xampp/htdocs/websites/App1/Models/Auth.php';  
-    include 'c:/xampp/htdocs/websites/App1/Models/Users.php';  
-    include 'c:/xampp/htdocs/websites/App1/Models/Login.php';  
-    include 'c:/xampp/htdocs/websites/App1/Models/Register.php';  
+   include 'c:/xampp/htdocs/websites/App1/Models/Register.php';  
    
     /*include_once 'c:/xampp/htdocs/websites/App1/Includes/autoload.php';*/
    

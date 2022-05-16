@@ -10,7 +10,7 @@
  
       // create of object of the user class
     $authInstance= new Auth($conn);
-   // $userInstance= new Users($conn);
+    $userInstance= new Users($conn);
     $registerInstance= new Register($conn);
    
 
