@@ -10,7 +10,14 @@ form.onsubmit=(e)=>{
 
 btn.onclick=()=>{
 
-let xhr=new XMLHttpRequest();
+ 
+   let xhr="";
+   if(window.XMLHttpRequest){
+      xhr=new XMLHttpRequest();
+         }
+    else{
+          xhr=new ActiveXObject("Microsoft.XMLHTTP");
+        }
 
 xhr.onreadystatechange=()=>{
 if(xhr.readyState===XMLHttpRequest.DONE){
@@ -19,7 +26,7 @@ if(xhr.readyState===XMLHttpRequest.DONE){
               
              if(data ==="success"){
              //    error.textContent=data;
-                location.href="home.php";
+                location.href="signupimgview.php";
                 }
                 else{
                     error.textContent=data;

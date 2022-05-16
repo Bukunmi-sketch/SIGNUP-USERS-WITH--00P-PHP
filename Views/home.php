@@ -91,6 +91,10 @@
                    </div>
 
               </div> 
+
+              <div class="logout">
+                 <a href="home.php?logout=true">logout</a>
+              </div>
            </main>
         
        </body>
