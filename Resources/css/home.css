@@ -8,21 +8,6 @@
     --color-black:#000;
     --color-success:#51fb51;
     --color-white:#ffffff;
-
-    --border-radius:4px;
-    --card-border-radius:5px;
-    --btn-padding:10px 25px;
-    --search-padding:0.6rem 1rem;
-    --card-padding:1rem;
-
-    --sticky-top-left:5.4rem;
-    --sticky-top-right:-18rem;
-
-    --border-color:#fff;
-
-    --font-lato: "lato", sans-serif;
-    --font-poppins: "poppins", sans-serif;
-    --font-ubuntu: 'ubuntu',sans-serif
 }
 
 
@@ -75,49 +60,21 @@ nav .container{
     justify-content: space-between;
 }
 
-.bar{
-    padding:5px;
-    border: 1px solid transparent;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.3em;
-    display: none;
-}
+.profile-photo{
+    position:relative;
+    align-items:center;
+    display:flex;
+    justify-content:center;
+ }
+ 
+ .profile-photo img{
+     width: 50px;
+     height: 50px;
+     border-radius: 50%;
+     border:3px solid grey;
+     
+ }
 
-
-nav .bottom-menu-nav{
-    display: flex;
-    border: 1px solid transparent;
-    justify-content: space-around;
-   
-}
-
-.bottom-menu-nav{
-    text-decoration: none;
-    color: var(--color-black);
-}
-
-nav .bottom-menu-nav .menu-nav{
-    display: flex;
-    flex-direction: column;
-    justify-content:center ;
-    align-items: center;
-    border: 1px solid transparent;
-    height:45px;
-   /* padding:17px 17px 17px 17px;*/
-   width:70px;
-   color: var(--color-black);
-}
-
-.bottom-menu-nav .menu-nav span{
-font-size: 1.2em;
-}
-
-.bottom-menu-nav .menu-nav h3{
-    font-size: 0.6em;
-    font-family: 'lato',sans-serif;
-
-}
 
 
 
@@ -130,30 +87,41 @@ main{
 
 
 main .container{
-    display:grid;
-    grid-template-columns: 20vw auto 20vw;
-    column-gap: 2rem;
+    margin:50px auto;
+    box-shadow: 0 0 10px #cecece;
     position: relative;
     border: 1px solid transparent;
+    height:400px;
     
 }
 
+.profile-photo-big{
+    position:relative;
+    margin:0 0 0 40%;
+    align-items:center;
+    display:flex;
+    justify-content:center;
+ }
+
+.profile-photo-big img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border:3px solid grey;
+}
+
+
+.welcome-address{
+    font-weight: bold;
+    text-align: center;
+    margin:20px 0 0 0;
+}
 
 /* ---------------------------MEDIA QUERY FOR SMALL TABLETS AND MOBILE PHONES-----------------*/
 
 @media screen and (max-width:992px) {
 
-    nav .search-bar{
-        display: none;
-    }
-
-    nav .bottom-menu-nav{
-        display: none;
-    }
-    main .container{
-        grid-template-columns: 0 auto 5rem;
-        gap: 0;
-    }
+  
 
    
 }
@@ -162,28 +130,12 @@ main .container{
     nav{
         padding: 0.2rem;
     }
-
-    .bar{
-        display: block;
-    }
-
-    .userbox{
-        display: inline-block;
-    }
+ 
 
     main .container{
         grid-template-columns: 0 auto 0;
     }
-    main .container .left{
-        grid-column:1/4 ;
-        left: 0;
-        width:0;
-        top: 50px;
-        overflow-y:scroll;
-        z-index:200;
-    }
-
-
+ 
 
 }
 

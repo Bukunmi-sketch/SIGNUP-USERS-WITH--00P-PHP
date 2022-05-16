@@ -38,6 +38,9 @@
     }
 
 
+    $dirfile="c:/xampp/htdocs/websites/App1/Images/signup_img/";
+   
+
 ?>
 
 <!DOCTYPE html>
@@ -58,7 +61,7 @@
                     </div>
 
                     <h2 class="logo">
-                        Bucuzzi
+                      Home
                     </h2>
                  
 
@@ -79,8 +82,13 @@
            <!--------MAIN   ------->
            <main>
               <div class="container">
-       
-
+                      
+                   <div class="profile-photo-big">
+                             <img src="http://localhost/websites/App1/Images/signup_img/dp--<?php echo "{$dp}" ; ?>" alt="">
+                   </div>     
+                   <div class="welcome-address">
+                         hello <?php echo "{$firstname} {$lastname}" ;     ?>
+                   </div>
 
               </div> 
            </main>
