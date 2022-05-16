@@ -38,9 +38,6 @@
     }
 
 
-    $dirfile="c:/xampp/htdocs/websites/App1/Images/signup_img/";
-    //$dirfile='..../Images/signup_img/'
-
 ?>
 
 <!DOCTYPE html>

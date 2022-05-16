@@ -12,21 +12,11 @@
 </head>
 <body>
      
-     <div class="newpostheader">
-     <span onclick="history.back()"><i class="fa fa-arrow-left"></i></a></span>
-     <h>WELCOME TO BUCUZZI <?php echo $firstname; ?> </h>
-     </div>
-
+    
         <div class="container">
            <div class="sub-container">
             
-             <!-- <div class="logobox">
-                   <div class="sub-logo">
-                        <div class="logoo">Bx</div>
-                        <p> Connect with friends on bucuzzi,share ideas</p>
-                   </div>
-              </div>
--->   
+        
              <div class="login-details">
           				<form action="#">
                 <div class="error"></div><br>
@@ -50,25 +40,7 @@
 			              <label>Email</label>
 			              <input type="email" name="email" placeholder="Email" value="<?php echo $email; ?>" >
 			          </div><br>
-		
-		<!--	   		 <div class="others-field">
-			             <label>Select Country</label><br>
-							 <select name="country">
-									<option value="Nigeria">Nigeria</option>
-								   <option value="South Africa">South Africa</option>
-								   <option value="Ghana">Ghana</option>
-								   <option value="Kenya ">Kenya</option>
-								   <option value="Egypt ">Egypt</option>
-								   <option value="United kingdom ">United kingdom</option>
-								   <option value="China">China</option>
-								   <option value="Singapore">Singapore</option>
-								   <option value="United states">United states</option>
-								   <option value=" "></option>
-								   <option value=" "></option>
-								   <option value=" "></option>
-								   <option value=" "></option>
-					 		 </select>
-				      </div><br>  -->
+	
 					   
 				    <div class="others-field">
 				       <label>Password</label> 

@@ -121,6 +121,7 @@
     font-family:"poppins",sans-serif;
     font-weight:bold;
     display:none;
+    color: red;
     }
     form .name-details{
        display:flex;

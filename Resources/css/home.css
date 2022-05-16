@@ -53,48 +53,9 @@ body{
     border: 1px solid transparent;
 }
 
-.profile-photo{
-    width: 2.7em;
-    height: 2.7rem;
-   /* aspect-ratio: 1/1; */ 
-    border-radius: 50%;
-    overflow:visible;
-  
-}
 
-img{
-    display: block;
-    width: 100%;
 
-}
 
-.btn{
-    display: inline-block;
-    padding:var(--btn-padding);
-    font-weight: bold;
-    border-radius: var(--border-radius);
-    cursor: pointer;
-    transition: all 300ms ease;
-    font-size: 0.9rem;
-}
-
-.btn:hover{
-    opacity: 0.8;
-}
-
-.btn-primary{
-    background-color: var(--color-primary);
-    color: var(--color-white);
-    font-size:0.8rem;
-}
-
-.text-bold{
-    font-weight:bold;
-}
-
-.text-muted{
-    color:var(--color-gray);
-}
 
 /* ------NAVBAR --------*/
 
@@ -123,24 +84,6 @@ nav .container{
     display: none;
 }
 
-.search-bar{
-    background-color: var(--color-light);
-    border-radius: var(--border-radius);
-    padding: var(--search-padding);
-    margin-left:2rem ;
-}
-
-.search-bar input[type="search"]{
-    background-color: transparent;
-    width: 30%;
-    margin-left:1rem ;
-    font-size: 0.9rem;
-    color: var(--color-dark);
-}
-
-nav .search-bar input[type="search"]::placeholder{
-    color: var(--color-gray);
-}
 
 nav .bottom-menu-nav{
     display: flex;
@@ -176,11 +119,7 @@ font-size: 1.2em;
 
 }
 
-nav .create{
-     display: flex;
-     align-items: center;
-     gap: 2em;
-}
+
 
 /* ------------------MAIN--------------------------*/
 
@@ -216,21 +155,7 @@ main .container{
         gap: 0;
     }
 
-    main .container .left{
-        grid-column:3/4 ;
-        position: fixed;
-        bottom: 0;
-        right: 0;
-    }
-
-    main .container .middle{
-        grid-column: 1/3;
-    }
-
-    main .container .right{
-        display: none;
-    }
-
+   
 }
 
 @media screen and (max-width:500px) {
@@ -258,27 +183,6 @@ main .container{
         z-index:200;
     }
 
-    main .container .left .remove-bar{
-        display: block;
-    }
-
-    main .container .left .profile{
-        display:block;
-        column-gap: 0;
-        border-radius: 0;
-    }
-
-    .left .sidebar{
-        margin-top:0;
-        border-radius: 0;
-
-    }
-    .sidebar h3{
-        display: block;
-    }
-    .left .btn{
-        display: block;
-    }
 
 
 }
